@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>發亮嶼Shiny Island Beauty</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+  <script>
+    // 只在 GitHub Pages 網域下執行
+    if (location.pathname === '/shiny-island-beauty/' || location.pathname === '/shiny-island-beauty/index.html') {
+      location.replace('/shiny-island-beauty/about');
+    }
+  </script>
 </html>
