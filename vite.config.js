@@ -12,4 +12,11 @@ export default defineConfig({
   server: {
     historyApiFallback: true, // ✅ React Router 刷新不會 404（非必要但建議加）
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      }
+    }
+  },
 })
