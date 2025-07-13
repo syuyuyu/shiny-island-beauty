@@ -92,7 +92,6 @@ section{
 }
 
 .about-item{
-  
   p:not(:first-child){
     &::before{
       content: '|';
@@ -106,5 +105,19 @@ section{
   }
   @media (max-width: 768px) {
     text-align: center;
+  }
+}
+
+.nav-li{
+  @media (max-width: 768px) {
+    min-width: 55px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-btn {
+      padding: 2vw 4vw;
+      font-size: 1rem;
+    }
   }
 }

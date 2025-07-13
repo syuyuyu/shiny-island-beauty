@@ -31,10 +31,11 @@ export const Navbar = () => {
 
 const Btn = ({i, isActive}) => {
   return(
-    <li className="whitespace-nowrap h-[70px]">
+    <li className="nav-li whitespace-nowrap h-[70px]">
       <Link
         to={`/${i.type}`}
-        className={`trans text-[1.2rem] px-[20px]  py-[10px] rounded-[5px]
+        className={`nav-btn trans rounded-[5px] 
+          text-[1.3rem] px-[20px] py-[10px]
           ${isActive 
             ? 'text-[#ffffff] bg-[#3eb6a8] pointer-events-none'
             : 'text-[#3eb6a8] bg-[#ffffff]'

@@ -43,6 +43,8 @@ export default {
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px',
+        'max-sm': { max: '479px' }, // ⬅️ 這才是「小於 sm」
+        'max-md': { max: '767px' }, // ⬅️ 這才是「小於 sm」
       },
 
       // 🟠 圓角
