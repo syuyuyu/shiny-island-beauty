@@ -14,9 +14,9 @@ export const Navbar = () => {
   },[secondPath])
 
   return(
-    <div className="bg-[#fff6cc] w-full h-[100px] flex items-center">
+    <div className="bg-[#fff6cc] w-full min-h-[100px] h-full w-full flex items-center pt-[15px]">
       <nav className="w-[90%] max-w-[500px] mx-auto">
-        <ul className="flex justify-evenly">
+        <ul className="flex justify-evenly flex-wrap">
           {navbar.map((i) => {
             const isActive = i.type === currentPage
             return(
@@ -31,10 +31,10 @@ export const Navbar = () => {
 
 const Btn = ({i, isActive}) => {
   return(
-    <li className="">
+    <li className="whitespace-nowrap h-[70px]">
       <Link
         to={`/${i.type}`}
-        className={`trans text-[1.2rem] px-[20px] py-[10px] rounded-[5px]
+        className={`trans text-[1.2rem] px-[20px]  py-[10px] rounded-[5px]
           ${isActive 
             ? 'text-[#ffffff] bg-[#3eb6a8] pointer-events-none'
             : 'text-[#3eb6a8] bg-[#ffffff]'
