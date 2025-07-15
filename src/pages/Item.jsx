@@ -31,8 +31,8 @@ const Item = () => {
                     className={`item-nav-item nav-btn rounded-[5px] 
                       text-[1.3rem] px-[20px] py-[10px] 
                       ${isActive 
-                        ? 'text-[#ffffff] bg-[#ffbdbd] pointer-events-none'
-                        : 'text-[#ffbdbd] bg-[#ffffff]'
+                        ? 'text-[#ffffff] bg-[#3eb6a8] pointer-events-none'
+                        : 'text-[#3eb6a8] bg-[#ffffff] cursor-pointer'
                       }
                     `}
                     onClick={() => setIsShow(i.en)}
@@ -45,7 +45,7 @@ const Item = () => {
           </div>
 
           {/* 項目 */}
-          <div className="item-title w-full flex gap-[10px] flex-wrap items-center justify-center text-[#ffbdbd] 
+          <div className="item-title title-style w-full flex gap-[10px] flex-wrap items-center justify-center text-[#3eb6a8] 
           my-[20px]">
             {
               isShow === 'tp' 
@@ -54,11 +54,14 @@ const Item = () => {
             }
           </div>
 
-          {
+          {/* {
             isShow === 'tp' 
             ? ''
-            : <p className="text-[#ffbdbd]">看到最後有優惠哦 ~</p>
-          }
+            : <p className="text-[#ffbdbd]">
+                <span className="align-sub">* </span>
+                看到最後有優惠哦 ~
+              </p>
+          } */}
 
           
         <div className="flex flex-col items-center w">
@@ -70,7 +73,7 @@ const Item = () => {
                   <img src="./images/item_1.png" alt="item" />
                 </div>
               )
-              : new Array(3).fill(0).map((_, i) => (
+              : new Array(2).fill(0).map((_, i) => (
                 <div key={i}>
                   <img src={`./images/item_${i+2}.png`} alt="item" />
                 </div>

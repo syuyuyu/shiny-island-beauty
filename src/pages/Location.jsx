@@ -6,10 +6,10 @@ const Location = () => {
   return(
  <article>
       {/* map */}
-      <p>我們在哪裡?</p>
+      {/* 我們在哪裡? */}
       <MapWrap />
 
-      <p>地圖參考</p>
+      {/* 地圖參考 */}
       <GoogleMap />
 
     </article>
