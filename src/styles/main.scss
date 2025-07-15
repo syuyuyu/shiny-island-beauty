@@ -109,6 +109,7 @@ section{
 }
 
 .nav-li{
+  font-size: 1.4rem;
   @media (max-width: 768px) {
     min-width: 55px;
     margin: auto;
@@ -116,8 +117,16 @@ section{
     justify-content: center;
     align-items: center;
     .nav-btn {
-      padding: 2vw 4vw;
+      padding: 1.8vw 3.5vw;
       font-size: 1rem;
     }
+  }
+}
+
+.title-style{
+  font-size: 1.4rem;
+  filter: drop-shadow(0px 0px .5px rgba(255, 10, 10, 0.15));
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
   }
 }

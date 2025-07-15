@@ -17,18 +17,28 @@ const About = () => {
             <p>
               半永久霧唇
             </p>
-            <p>
-              皮膚做臉
+             <p>
+              眉唇淡色
             </p>
             <p>
-              眉唇淡色
+              修眉
+            </p>
+            <p>
+              皮膚做臉
             </p>
             <p>
               美甲
             </p>
             <p>
-              修眉
+              卸甲
             </p>
+            <p>
+              艾灸
+            </p>
+            <p>
+              耳燭
+            </p>
+            
 
           </div>
         <div className="flex flex-col gap-[10px]">

@@ -35,7 +35,7 @@ const Btn = ({i, isActive}) => {
       <Link
         to={`/${i.type}`}
         className={`nav-btn trans rounded-[5px] 
-          text-[1.3rem] px-[20px] py-[10px]
+          px-[25px] py-[15px]
           ${isActive 
             ? 'text-[#ffffff] bg-[#3eb6a8] pointer-events-none'
             : 'text-[#3eb6a8] bg-[#ffffff]'
