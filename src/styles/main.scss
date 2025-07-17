@@ -92,6 +92,10 @@ section{
 }
 
 .about-item{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
   p:not(:first-child){
     &::before{
       content: '|';
